@@ -39,5 +39,5 @@ GitHub: [https://github.com/radheyyyyyy/webrtc](https://github.com/radheyyyyyy/w
    git clone https://github.com/radheyyyyyy/webrtc.git
    cd webrtc
    npm i
-   docker compuse up -d
+   docker compose up -d
    npm run dev
