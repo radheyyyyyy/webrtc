@@ -15,10 +15,10 @@ wss.on('connection', (ws) => {
             receiverSocket = ws;
         }
         else if (message.type === 'offer') {
-            receiverSocket === null || receiverSocket === void 0 ? void 0 : receiverSocket.send(JSON.stringify({ type: 'offer', sdp: message.sdp }));
+            receiverSocket.send(JSON.stringify({ type: 'offer', sdp: message.sdp }));
         }
         else if (message.type === 'answer') {
-            senderSocket === null || senderSocket === void 0 ? void 0 : senderSocket.send(JSON.stringify({ type: 'answer', sdp: message.sdp }));
+            senderSocket.send(JSON.stringify({ type: 'answer', sdp: message.sdp }));
         }
         else if (message.type === 'icecandidate') {
             if (ws === senderSocket) {

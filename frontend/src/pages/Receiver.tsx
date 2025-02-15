@@ -5,7 +5,7 @@ export function Receiver(){
     useEffect(()=>{
 
         const pc=new RTCPeerConnection();
-        const socket=new WebSocket('ws://localhost:3000');
+        const socket=new WebSocket('ws://localhost:8080');
 
         pc.ontrack=async (event)=>{
             console.log(event)

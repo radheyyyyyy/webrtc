@@ -1,6 +1,6 @@
-import {WebSocketServer,WebSocket} from "ws";
+import {WebSocketServer} from "ws";
 
-const wss=new WebSocketServer({port:3000});
+const wss=new WebSocketServer({port:8080});
 let senderSocket:any=null;
 let receiverSocket:any=null;
 

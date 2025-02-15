@@ -5,7 +5,7 @@ export function Sender(){
 
     const [socket,set]=useState<null|WebSocket>(null);
     useEffect(()=>{
-        const socket=new WebSocket("ws://localhost:3000");
+        const socket=new WebSocket("ws://localhost:8080");
         set(socket);
         socket.onopen=()=>{
             socket.send(JSON.stringify({type:'sender'}))
