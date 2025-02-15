@@ -37,7 +37,7 @@ GitHub: [https://github.com/radheyyyyyy/webrtc](https://github.com/radheyyyyyy/w
 
    ```bash
    git clone https://github.com/radheyyyyyy/webrtc.git
-   cd webrtc
+   cd webrtc/frontend
    npm i
    docker compose up -d
    npm run dev
